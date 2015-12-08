@@ -1,0 +1,9 @@
+##multiplication
+
+def multiplication(x1,x2):
+	return x1*x2
+
+def prod(L):
+	return reduce(multiplication, L)
+
+print('3 * 5 * 7 * 9 =', prod([3, 5, 7, 9]))
