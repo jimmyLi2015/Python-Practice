@@ -1,0 +1,14 @@
+## a每次循环把末位加到b的首位
+def is_palindrome(n):
+	global b
+
+	for x in range(1, len(str(n))):
+		a = n
+		b += (a % 10) * (10 ** (x - 1))
+		a //= 10
+
+	if b == n:
+		return n
+
+output = filter(is_palindrome, range(1, 1000 ))
+print(list(output))
