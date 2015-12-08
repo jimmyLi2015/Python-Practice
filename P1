@@ -1,0 +1,6 @@
+##print function and escape character
+print('s1 =', '\'Hello, world\'')
+print('s2 =', '\'Hello, \\\'Adam\\\'\'')
+print('s3 =', 'r\'Hello, \"Bart\"')
+print('s4 =', '''r\'\'\'Hello,
+...Lisa!\'\'\'''')
