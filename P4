@@ -1,0 +1,26 @@
+##ax2+bx+c=0 calculation
+
+import math
+
+def quadratic(a, b, c):
+    
+    delta = b * b - 4 * a * c 
+
+    if a == 0 :
+        return '二次项系数不可为零'
+
+    elif delta < 0 :
+        return 'delta小于零'
+
+    else :
+        x1 = float( ( - b + math.sqrt( delta )) / ( 2 * a ) )
+        x2 = float( ( - b - math.sqrt( delta )) / ( 2 * a ) )
+        return x1, x2
+
+a = float( input('请输入二次项系数：') )
+b = float( input('请输入一次项系数：') )
+c = float( input('请输入尾数：') )
+
+result = quadratic(a, b, c)
+print('x1 =', result[0])
+print('x2 =', result[1])
